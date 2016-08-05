@@ -47,7 +47,7 @@ func (l *Listener) Addr() net.Addr {
 	return l.listeners[0].Addr()
 }
 
-// Close will close the multi-listener by iterating over it's listeners and calling
+// Close will close the multi-listener by iterating over its listeners and calling
 // Close() on each one. If an error is encountered, it is returned. If multiple
 // errors are encountered they are returned in a MutiError. Close will also shut down
 // the background goroutines that are calling Accept() on the underlying listeners.
